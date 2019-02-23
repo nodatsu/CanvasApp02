@@ -54,13 +54,20 @@ public class MyView extends View {
         path.lineTo(500, 500);
         canvas.drawPath(path, paint);
 
-        paint.setColor(Color.BLUE);
+        paint.setColor(Color.rgb(0, 0, 255));
         path.reset();
         path.moveTo(300, 1000);
         path.lineTo(700, 1100);
         path.lineTo(200, 1200);
         path.lineTo(300, 1000);
         canvas.drawPath(path, paint);
+
+        // 国旗
+        paint.setColor(Color.WHITE);
+        paint.setStyle(Paint.Style.FILL);
+        canvas.drawRect(400, 100, 800, 400, paint);
+        paint.setColor(Color.rgb(255, 0, 0));
+        canvas.drawCircle(600, 250, 100, paint);
 
     }
 
