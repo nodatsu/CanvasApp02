@@ -36,6 +36,11 @@ public class MyView extends View {
         paint.setStyle(Paint.Style.FILL);
         canvas.drawRect(400, 800, 600, 1000, paint);
 
+        // 線
+        paint.setColor(Color.MAGENTA);
+        paint.setStrokeWidth(10);
+        canvas.drawLine(0, 0, canvas.getWidth(), canvas.getHeight(), paint);
+        canvas.drawLine(0, canvas.getHeight(), canvas.getWidth(), 0, paint);
     }
 
 }
